@@ -3,7 +3,9 @@ name = "openqc-pipeline"
 version = "0.1.0"
 description = "Scalable Data Quality Control & Visualization Toolkit for Spatiotemporal Research Data"
 authors = ["Ati Arabshahi <https://github.com/AtiArabshahi>"]
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = "MIT"
+keywords = ["data quality", "spatiotemporal", "visualization", "CLI"]
 packages = [{ include = "openqc_pipeline" }]
 
 [tool.poetry.scripts]
@@ -45,7 +47,3 @@ profile = "black"
 line_length = 88
 multi_line_output = 3
 include_trailing_comma = true
-
-[tool.flake8]
-max-line-length = 88
-extend-ignore = ["E203", "W503"]
